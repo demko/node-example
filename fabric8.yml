@@ -1,0 +1,11 @@
+---
+pipeline: "workflows/node/CanaryReleaseStage/Jenkinsfile"
+buildName: "node-example"
+codeReview: true
+links:
+  Git: "https://github.com/demko/node-example"
+  Job: "http://172.30.130.125:80/job/node-example"
+  Staging: "http://172.30.254.78:80/kubernetes/pods?namespace=default-staging"
+environments:
+  Staging: "default-staging"
+useLocalFlow: true
